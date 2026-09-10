@@ -13,8 +13,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:minHeight="48dp"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="64dp" />
+        app:layout_constraintEnd_toEndOf="@+id/textDisplay"
+        app:layout_constraintStart_toStartOf="@+id/textDisplay"
+        tools:layout_editor_absoluteY="130dp" />
 
     <TextView
         android:id="@+id/textDisplay"
@@ -25,6 +26,8 @@
         android:shadowDy="30"
         android:shadowRadius="30"
         android:text="Air Supply is the best band EVER!"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="277dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 </androidx.constraintlayout.widget.ConstraintLayout>
